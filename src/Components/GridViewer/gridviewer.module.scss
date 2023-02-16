@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+@mixin basic {
+    color: #3d3160;
+    margin: 0 0 7px 0;
+    font-weight: 900;
+}
+
+.gridMap {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.875rem;
+
+    @media screen and (max-width:480px) {
+        row-gap: 1.875rem;
+    }
+
+    .cardWrapper {
+        background: #e5e6ea;
+        padding: .125rem;
+
+        .card {
+            padding: 0.875rem 1.875rem;
+            // border: 1px solid blue;
+            font-family: 'Roboto Condensed', sans-serif;
+            background: white;
+            border-radius: 10px;
+
+            .cardContent {
+                background: white;
+                text-align: center;
+
+                .image {
+                    width: 5.875rem;
+                    height: 5.875rem;
+                    border-radius: 50%;
+                }
+
+                .name {
+                    @include basic();
+                }
+
+                .occupation {
+                    @include basic();
+                    font-size: .875rem;
+                }
+
+                .age {
+                    @include basic();
+                    font-size: .75rem;
+                }
+            }
+        }
+    }
+
+}

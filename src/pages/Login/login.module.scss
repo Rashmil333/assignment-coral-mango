@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.loginWrapper {
+    background: linear-gradient(to right, #3e1d63, #942364);
+    height: 100vh;
+    overflow: hidden;
+
+    .container {
+        max-width: 28.25rem;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Roboto Condensed', sans-serif;
+        position: relative;
+        margin-top: 10%;
+
+        @media screen and (max-width:480px) {
+            margin: 10% .625rem 0 .625rem;
+        }
+
+        .content {
+            box-shadow: 0 0 18px 5px rgba(0, 0, 0, 0.12);
+            padding: 0 1.875rem 1.875rem 1.875rem;
+            background: white;
+            border-radius: .3125rem;
+
+            .title {
+                padding-top: 20px;
+                margin: 0;
+                font-size: 2rem;
+                color: #fe3989;
+            }
+
+            .subtitle {
+                font-size: 1.125rem;
+                font-weight: 900;
+            }
+
+            .inputSection {
+                text-align: start;
+            }
+        }
+
+        .policy {
+            font-size: .875rem;
+            margin: 2.1875rem 0 0 0;
+            color: white;
+        }
+
+    }
+}

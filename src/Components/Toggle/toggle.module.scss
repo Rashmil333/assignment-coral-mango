@@ -1,0 +1,33 @@
+.toggle {
+    min-width: 42px;
+    height: 24px;
+    background: lightgrey;
+    display: grid;
+    place-items: center;
+    justify-content: flex-start;
+    border-radius: .8125rem;
+    cursor: pointer;
+    position: relative;
+
+    .label {
+        position: absolute;
+        top: -26px;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .circle {
+        width: 20px;
+        height: 20px;
+        background: grey;
+        border-radius: 50%;
+        transition: 0.3s;
+
+        &.active {
+            transform: translate(20px, 0);
+            transition: 0.3s;
+            background: #fe3989;
+        }
+    }
+}

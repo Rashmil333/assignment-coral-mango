@@ -1,0 +1,42 @@
+.dashboardWrapper {
+    .searchSection {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.875rem 2.875rem;
+
+        @media screen and (max-width:480px) {
+            flex-direction: column;
+            row-gap: 1.875rem;
+            padding: 1.875rem 1rem;
+        }
+
+        .filtersSections {
+            display: flex;
+            column-gap: 20px;
+            align-items: center;
+        }
+    }
+
+    .indicator {
+        background: #cce6fe;
+        padding: 1.25rem;
+        color: #1c4f82;
+        font-weight: bold;
+        max-width: fit-content;
+        border-radius: .625rem;
+        margin-left: 2.875rem;
+
+        @media screen and (max-width:480px) {
+            margin-left: 1rem;
+        }
+    }
+
+    .tableSection {
+        padding: 1.875rem 2.875rem;
+
+        @media screen and (max-width:480px) {
+            padding: 1.875rem 1rem;
+        }
+    }
+
+}

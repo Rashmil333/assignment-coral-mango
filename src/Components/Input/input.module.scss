@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+.inputWrapper {
+    margin-bottom: 1.5625rem;
+
+    .label {
+        color: gray;
+        text-transform: capitalize;
+
+        &.error {
+            color: red;
+        }
+    }
+
+    .input {
+        outline: none;
+        border: none;
+        background-color: #ebf0f3;
+        height: 2.9375rem;
+        border-radius: 4px;
+        margin-top: .3125rem;
+        width: -webkit-fill-available;
+        font-size: 20px;
+        padding-left: 10px;
+        font-family: 'Roboto Condensed', sans-serif;
+
+        &.search {
+            background: transparent;
+            max-width: 400px;
+            border: 1px dashed grey;
+            border-radius: 20px;
+        }
+    }
+}
